@@ -1,0 +1,26 @@
+﻿@using LPPA.WebSite.Models
+@{
+    ViewBag.Title = "Listado de Clientes";
+}
+<style>
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+</style>
+<h2>Listado Completo de Clientes</h2>
+
+<p>
+    <a href="/Clientes/Create">Nuevo Cliente</a>
+    <hr />
+
+    <table>
+        <tr><th><b>Nombre</b></th><th><b>DNI</b></th><th><b>Sexo</b></th><th><b>Fecha de Nacimiento</b></th></tr>
+        @foreach (var item in DominioCliente.Get())
+        {
+            <tr><td>@item.Nombre</td><td>@item.DNI</td><td>@item.Sexo</td><td>@item.FechaNac</td></tr>
+         }
+    </table>
+</p>
+

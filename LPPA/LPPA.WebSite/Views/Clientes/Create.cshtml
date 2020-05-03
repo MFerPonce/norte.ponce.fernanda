@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Agregar Nuevo Cliente";
+}
+
+<h2>Nuevo Cliente</h2>
+<hr />
+
+<form method="Post" action="/Clientes/Create">
+    <label for="nombre">Nombre</label><br />
+    <input type="text" name="nombre" placeholder="Ingrese Nombre" />
+    <br />
+    <br />
+    <label for="dni">DNI</label><br />
+    <input type="number" name="dni" required pattern="[0-9]{8}" placeholder="Nro DNI" />
+    <br />
+    <br />
+    <label for="sexo">Sexo</label><br />
+    <p><input type="radio" name="sexo" value="M" /> masculino <input type="radio" name="sexo" value="F" /> femenino </p>
+    <label for="fnac">Fecha de Nacimiento</label><br />
+    <input type="date" name="fnac" placeholder="Fecha de Nacimiento" required />
+    <br />
+    <br />
+    <input type="submit" value="Guardar" />
+</form>
+
