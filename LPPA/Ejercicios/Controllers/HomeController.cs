@@ -51,5 +51,13 @@ namespace Ejercicios.Controllers
         {
             return View();
         }
+        public ActionResult Formularios2()
+        {
+            return View();
+        }
+        public ActionResult FormularioHTML5()
+        {
+            return View();
+        }
     }
 }
