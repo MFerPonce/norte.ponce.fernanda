@@ -111,6 +111,7 @@
     <Content Include="Views\Home\Tablas1.cshtml" />
     <Content Include="Views\Home\Tablas2.cshtml" />
     <Content Include="Views\Home\Formularios1.cshtml" />
+    <Content Include="Views\Home\ConceptosBasicos4.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -26,6 +26,10 @@ namespace Ejercicios.Controllers
         {
             return View();
         }
+        public ActionResult ConceptosBasicos4()
+        {
+            return View();
+        }
         public ActionResult Enlaces()
         {
             return View();
