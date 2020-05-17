@@ -88,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\estilos.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -106,6 +107,10 @@
     <Content Include="Views\Home\Cómoseusa1.cshtml" />
     <Content Include="Views\Home\Cómoseusa2.cshtml" />
     <Content Include="Views\Home\Cómoseusa3.cshtml" />
+    <Content Include="Views\Home\Selectores1.cshtml" />
+    <Content Include="Views\Home\Selectores2.cshtml" />
+    <Content Include="Views\Home\Selectores3.cshtml" />
+    <Content Include="Views\Home\DiseñoFijo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

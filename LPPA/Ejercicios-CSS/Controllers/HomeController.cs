@@ -25,5 +25,21 @@ namespace Ejercicios_CSS.Controllers
         {
             return View();
         }
+        public ActionResult Selectores1()
+        {
+            return View();
+        }
+        public ActionResult Selectores2()
+        {
+            return View();
+        }
+        public ActionResult Selectores3()
+        {
+            return View();
+        }
+        public ActionResult DiseñoFijo()
+        {
+            return View();
+        }
     }
 }
