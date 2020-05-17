@@ -41,5 +41,9 @@ namespace Ejercicios_CSS.Controllers
         {
             return View();
         }
+        public ActionResult DiseñoElástico()
+        {
+            return View();
+        }
     }
 }
