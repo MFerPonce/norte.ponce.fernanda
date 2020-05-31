@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace LPPA.WebSite.Models
+﻿namespace LPPA.WebSite.Models
 {
     public class Producto
     {

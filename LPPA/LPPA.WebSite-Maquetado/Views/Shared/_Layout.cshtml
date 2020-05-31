@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - UAI</title>
+    <link href="~/Content/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <!-- Cabecera -->
+        <header>
+            <img class="logo" src="/content/img/logo.gif" alt="Logo de la Institución" />
+            <nav>
+                <ul>
+                    <li><a href="/">Principal</a> </li>
+                    <li><a href="/Home/Contact">Contacto</a> </li>
+                    <li><a href="/Home/About">Acerca de</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Contenido -->
+        <section>
+            <article>
+                @RenderBody()
+            </article>
+        </section>
+
+        <!-- Contenido relacionado-->
+        <aside id="pub">
+            <article>
+                <header>
+                    <h3>Título del Aside</h3>
+                    <p>
+                        En la segunda parte se trabaja <em>HTML</em>. Partiendo de la estructura básica de una página web, se explican las etiquetas de <em>HTML</em> que se utilizan para definir el texto, los enlaces, las listas, las tablas, los formularios y los elementos multimedia.
+
+                        En la tercera y última parte se explica <em>CSS</em>, el lenguaje que se emplea para definir el formato y la presentación de una página web. Se explica cómo utilizar el color, cómo definir la presentación del texto, de las tablas y de los formularios; cómo realizar transformaciones y transiciones con el fin de diseñar una página web.
+                    </p>
+                </header>
+            </article>
+
+        </aside>
+        <!-- Pie de pagina -->
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Universidad Abierta Interamericana</p>
+        </footer>
+    </div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

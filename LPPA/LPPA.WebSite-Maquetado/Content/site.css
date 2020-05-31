@@ -1,0 +1,86 @@
+﻿/*IMPORTANTE - No modificar estos estilos, ya que son imprescindibles para que la pagina se vea correctamente.*/
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+p {
+    text-align: justify;
+}
+
+#container{
+    width:1080px;
+    margin:0 auto;
+}
+
+.logo{
+    margin-left: 10px;
+    width:120px;
+    margin-bottom: 5px;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    margin: 5px;
+    list-style:none;
+    display: inline;
+}
+
+nav ul li a{
+    padding: 5px;
+    text-decoration: none;
+    background-color:cornflowerblue;
+}
+
+header{
+    display:block;
+    background-color:cornflowerblue;
+    padding: 10px 0px;
+}
+
+section {
+    background-color:aliceblue;
+    padding:5px;
+    float:left;
+    width:79%;
+    }
+
+aside{
+    float:right;
+    width:20%;
+    margin:0px;
+    height:100%;
+}
+
+aside header{
+    color:ghostwhite;
+    background-color:darkblue;
+}
+
+aside header p{
+    margin: 5px;
+    padding-top: 8px;
+}
+
+footer{
+    clear:both;
+    height: 30px;
+    background-color:cornflowerblue;
+}
+
+footer p{
+    text-align:center;
+}
