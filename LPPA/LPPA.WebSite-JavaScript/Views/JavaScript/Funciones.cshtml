@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Funciones";
+}
+
+<h2>Carga de Productos</h2>
+
+<div id="CargaProducto">
+    <br />
+    <label for="txtCodigo">Código del Producto</label>
+    <br />
+    <input type="text" id="txtCodigo" maxlength="10" placeholder="Ingrese código del producto"/>
+    <br /><br />
+    <label for="txtNombre">Nombre del Producto</label>
+    <br />
+    <input type="text" id="txtNombre" maxlength="50" placeholder="Ingrese nombre del producto" />
+    <br /><br />
+    <span>
+        <button id="btnGuardar" type="submit">Guardar Productos</button>
+        <button id="btnListar" type="submit">Listar Productos</button>
+    </span>
+</div>
+<br/>
+<h2>Lista de Productos</h2>
+<br />
+
+<span id="ListaProducto">
+    
+</span>
+
+@section scripts
+    {
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+
+        
+        var lista = [];
+
+        $("#btnGuardar").click(function ()
+        {
+            
+            var codigo = document.getElementById("txtCodigo").value;
+            var nombre = document.getElementById("txtNombre").value;
+            if (codigo != "" && nombre != "")
+            {
+                var producto = new Object()
+                producto.Codigo = codigo;
+                producto.Nombre = nombre;
+                lista.push(producto);
+            }
+            
+        });
+
+        $("#btnListar").click(function () {
+
+            limpiar();
+            var linea = '';
+            for (var i = 0; i < lista.length; i++) {
+                linea += '<li>' + lista[i].Codigo + '&#8195' + lista[i].Nombre + ' </li>';
+            }
+            $('#ListaProducto').append(linea);
+        });
+
+        function limpiar() {
+            const el = document.getElementById('ListaProducto');
+            while (el.firstChild)
+                el.removeChild(el.firstChild);
+        }
+
+    </script>
+}
+

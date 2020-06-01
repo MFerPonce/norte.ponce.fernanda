@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Variables";
+}
+
+<h2>Variables</h2>
+
+<div>
+    <input id="btnCadena" class="button" type="button" value="Ver valores" onclick="variableCadena()" />
+</div>
+
+@section scripts
+{
+
+    <script>
+        // Una función en JavaScript es un objeto con código ejecutable que se vincula a la misma
+        function variableCadena() {
+
+            //var cadena = "Core i4 8GB RAM";
+            //window.alert(cadena);
+
+            //var num = 2;
+            //window.alert(num);
+
+            //var boleana = true;
+            //window.alert(boleana);
+
+            //var myObj = { firstName: "Java", lastName: "Script" };
+            //window.alert(myObj.firstName + ',' + myObj.lastName);
+
+
+            //var undf;
+
+            //var myObj;
+            //window.alert(myObj);
+
+            var vector = ["manzana", "naranja", "tomate"];
+            window.alert(vector[0]);
+            window.alert(vector[1]);
+            window.alert(vector[2]);
+
+        }
+
+    </script>
+
+}
